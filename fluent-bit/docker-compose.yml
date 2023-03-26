@@ -2,7 +2,8 @@ version: "3.9"
 services:
   fluentbit:
     image: fluentbit
-    build: .
+    build:
+      context: .
     ports:
       - "24224:24224"
       - "24224:24224/udp"
