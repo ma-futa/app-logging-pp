@@ -1,9 +1,9 @@
 version: "3.9"
 services:
   fluentbit:
-    image: fluentbit
-    build:
-      context: .
+    image: "mofuta1mo/fluent-bit1:v1"
+    # build:
+    #   context: .
     ports:
       - "24224:24224"
       - "24224:24224/udp"
