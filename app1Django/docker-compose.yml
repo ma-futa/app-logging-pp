@@ -2,8 +2,7 @@ version: '3.9'
 
 services:
   app1django:
-    build:
-      context: .
+    image: "mofuta1mo/app1django:latest"
     ports:
       - "8000:8000"
     logging:
