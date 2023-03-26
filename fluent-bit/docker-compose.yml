@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  fluentbit:
+    build: .
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"

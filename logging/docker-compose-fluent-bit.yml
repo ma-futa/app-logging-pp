@@ -1,0 +1,7 @@
+fluent-bit:
+    image: grafana/fluent-bit-plugin-loki:latest
+    container_name: fluent-bit
+    environment:
+      - LOKI_URL=http://loki:3100/loki/api/v1/push
+    volumes:
+      - ./fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
