@@ -2,8 +2,8 @@ version: "3.9"
 services:
   fluentbit:
     image: "mofuta1mo/fluent-bit1:v1"
-    # build:
-    #   context: .
+    deploy:
+      mode: global
     ports:
       - "24224:24224"
-      - "24224:24224/udp"
+      - "24224:24224/udp" 

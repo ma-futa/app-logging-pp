@@ -8,4 +8,4 @@ services:
     logging:
       driver: fluentd
       options:
-        tag: app1django
+        tag: app1django 
